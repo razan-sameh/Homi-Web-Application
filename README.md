@@ -1,4 +1,4 @@
-# Homi
+# Homi Web Application
 Homi is furniture e-commerce platform. Below is an overview of the development environment setup and key features implemented.
 
 ## Setting up the Developer Environment:
