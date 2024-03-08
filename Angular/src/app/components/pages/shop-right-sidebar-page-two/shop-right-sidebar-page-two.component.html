@@ -1,0 +1,204 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area mt-0" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Products Area -->
+<section class="products-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="fiwan-grid-sorting row align-items-center">
+                    <div class="col-lg-6 col-md-6 result-count">
+                        <div class="d-flex align-items-center">
+                            <p>We found <span class="count">09</span> products available for you</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 ordering">
+                        <div class="select-box">
+                            <label>Sort By:</label>
+                            <ngx-select-dropdown (searchChange)="searchChange($event)" tabindex="0" [multiple]="false" [(ngModel)]="singleSelect" [config]="config" [options]="options"></ngx-select-dropdown>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-md-6" *ngFor="let Content of singleProductsItem | paginate: { itemsPerPage: 8, currentPage: shopRightSidebar }">
+                        <div class="single-products-item">
+                            <div class="products-image">
+                                <a routerLink="/{{Content.detailsLink}}" class="d-block">
+                                    <img [src]="Content.mainImg" alt="image">
+                                </a>
+                                <ul class="products-button">
+                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView"><i class='bx bx-show-alt'></i></a></li>
+                                    <li><a href="{{Content.mainImg}}" class="popup-btn"><i class='bx bx-scan'></i></a></li>
+                                    <li><a routerLink="/{{Content.detailsLink}}"><i class='bx bx-link'></i></a></li>
+                                </ul>
+                                <a routerLink="/cart" class="add-to-cart-btn"><i class="bx bx-cart"></i> Add To Cart</a>
+                            </div>
+                            <div class="products-content">
+                                <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
+                                <div class="price">
+                                    <span class="new-price">{{Content.newPrice}}</span>
+                                    <span class="old-price" *ngIf="Content.oldPrice">{{Content.oldPrice}}</span>
+                                </div>
+                                <a routerLink="/wishlist" class="add-to-wishlist-btn"><i class="bx bx-heart"></i></a>
+                            </div>
+                            <span class="on-sale" *ngIf="Content.sale">{{Content.sale}}</span>
+                            <div class="out-of-stock" *ngIf="Content.outOfStock">{{Content.outOfStock}}</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="pagination-area text-center">
+                            <pagination-controls (pageChange)="shopRightSidebar = $event"></pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <aside class="widget-area left-widget-area">
+                    <div class="widget widget_search">
+                        <form class="search-form">
+                            <label>
+                                <input type="search" class="search-field" placeholder="Search...">
+                            </label>
+                            <button type="submit"><i class="bx bx-search-alt"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Categories</h3>
+
+                        <ul>
+                            <li><a routerLink="/shop-left-sidebar-1">Accessories</a><span class="post_count">(5)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Men</a><span class="post_count">(7)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Women</a><span class="post_count">(3)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Sofa</a><span class="post_count">(2)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Uncategorized</a><span class="post_count">(8)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_colors">
+                        <h3 class="widget-title">Filter By Color</h3>
+
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="gray">Gray</span>
+                                    <span>Gray</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="green">Green</span>
+                                    <span>Green</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="red">Red</span>
+                                    <span>Red</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="black">Black</span>
+                                    <span>Black</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="brown">Brown</span>
+                                    <span>Brown</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_price_filter">
+                        <h3 class="widget-title">Filter by Price</h3>
+
+                        <div class="collection_filter_by_price">
+                            <input class="js-range-of-price" type="text" data-min="0" data-max="1055" name="filter_by_price" data-step="10">
+                        </div>
+                    </div>
+
+                    <div class="widget widget_top_rated_products">
+                        <h3 class="widget-title">Our Best Sellers</h3>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg1" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Long Sleeve Leopard</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg2" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Causal V-Neck Soft</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg3" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Yidarton Women's Comfy</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg4" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Womens Tops Color</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Products Area -->

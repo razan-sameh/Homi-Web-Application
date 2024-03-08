@@ -1,0 +1,264 @@
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMIdemo\HOMIdemo\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\bin\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Desktop\final project\HOMIdemo\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v2\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIdemo-v3\Core\obj\Debug\net7.0\ref\Core.dll
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\bin\Debug\net7.0\Core.deps.json
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\bin\Debug\net7.0\Core.dll
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\bin\Debug\net7.0\Core.pdb
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.dll
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\refint\Core.dll
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\Core.pdb
+E:\HOMIdemo-v4\HOMIdemo-v3-1\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMI-V5\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMI-V5\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\bin\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Downloads\HOMI-V5\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\bin\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\NoteBook\Desktop\final project\HOMI-V5\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\HOMI-V5\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V9\HOMIAPP\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V14\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14\HOMIAPP-V14\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.dll
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.dll
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\Razan\Downloads\HOMIAPP-V14bayza\HOMIAPP-V14\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V15\HOMIAPP-V14\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V16\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V18\HOMIAPP-V18\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\backend\HOMIAPP-V19\HOMIAPP-V19\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\HOMIAPP-V20\Core\obj\Debug\net7.0\ref\Core.dll
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.deps.json
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.dll
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\refint\Core.dll
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.pdb
+D:\ITI\Graduation Project\HOMI-all\Final\HOMIAPP-V21\HOMIAPP-V20\Core\obj\Debug\net7.0\ref\Core.dll
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.deps.json
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\bin\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.dll
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\Core.pdb
+D:\Razan\ITI-Projects\Grad Project\Final\HOMIAPP-V20\Core\obj\Debug\net7.0\ref\Core.dll

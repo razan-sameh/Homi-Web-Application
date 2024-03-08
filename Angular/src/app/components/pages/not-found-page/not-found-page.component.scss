@@ -1,0 +1,82 @@
+.error-area {
+    border-top: 1px dashed #eeeeee;
+}
+.error-content {
+    text-align: center;
+
+    h3 {
+        font-size: 35px;
+        margin: {
+            bottom: 20px;
+            top: 45px;
+        };
+    }
+    p {
+        max-width: 550px;
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 0;
+        };
+    }
+    .default-btn {
+        margin-top: 30px;
+
+        i {
+            margin-top: 0;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .error-content {
+        h3 {
+            font-size: 25px;
+            margin: {
+                bottom: 15px;
+                top: 30px;
+            };
+        }
+        .default-btn {
+            margin-top: 15px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

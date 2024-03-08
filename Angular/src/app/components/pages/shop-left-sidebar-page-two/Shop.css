@@ -1,0 +1,44 @@
+.widget-area .widget_colors ul li a span:nth-child(1).blue {
+    background-color: blue;
+}
+.widget-area .widget_colors ul li a span:nth-child(1).antiquewhite {
+    background-color: antiquewhite;
+}
+.widget-area .widget_colors ul li a span:nth-child(1).burlywood {
+    background-color: burlywood;
+}
+.widget-area .widget_categories ul,
+.widget-area .widget_colors ul{
+    height: 200px;
+    overflow: overlay;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0ca59d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0ca59d80;
+}
+
+.pagination-area .pagination-controls .ngx-pagination li a:focus {
+    background-color: transparent;
+    color: var(--blackColor);
+    border: 2px solid var(--mainColor);
+}
+.pagination-area .pagination-controls .ngx-pagination li.current {
+    background-color: transparent;
+    color: var(--blackColor);
+    border: 2px solid #f5f3f3 !important;
+}
+

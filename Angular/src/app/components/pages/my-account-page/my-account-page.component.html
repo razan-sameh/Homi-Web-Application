@@ -1,0 +1,84 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Profile Authentication Area -->
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Login</h2>
+
+                    <form>
+                        <div class="form-group">
+                            <label>Username or email</label>
+                            <input type="text" class="form-control" placeholder="Username or email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-6 remember-me-wrap">
+                                <p>
+                                    <input type="checkbox" id="test2">
+                                    <label for="test2">Remember me</label>
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 lost-your-password-wrap">
+                                <a routerLink="/" class="lost-your-password">Lost your password?</a>
+                            </div>
+                        </div>
+
+                        <button type="submit">LOG IN</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="register-form">
+                    <h2>Register</h2>
+
+                    <form>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <p class="description">The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & )</p>
+
+                        <button type="submit">REGISTER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Profile Authentication Area -->

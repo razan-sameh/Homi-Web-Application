@@ -1,0 +1,33 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area mt-0" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Order Tracking Area -->
+<section class="order-tracking-area ptb-100">
+    <div class="container">
+        <div class="order-tracking-content">
+            <form>
+                <div class="form-group">
+                    <label>Order ID</label>
+                    <input type="text" class="form-control" placeholder="Found in your order confirmation email">
+                </div>
+
+                <div class="form-group">
+                    <label>Billing E-mail</label>
+                    <input type="email" class="form-control" placeholder="Email you used during checkout">
+                </div>
+
+                <button type="submit" class="default-btn">TRACK ORDER</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- End Order Tracking Area -->

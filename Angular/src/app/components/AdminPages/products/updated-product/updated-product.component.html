@@ -1,0 +1,169 @@
+<app-sidebar></app-sidebar>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});margin-top: 0px;">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/Products">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Profile Authentication Area -->
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="login-form">
+                    <h2>Update Product</h2>
+
+                    <form [formGroup]="addForm" (ngSubmit)="onSubmit()"  *ngIf="product">
+
+                        <div class="formStyles d-flex justify-content-between">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input
+                                [class.is-invalid]="addForm.get('name')?.invalid&&addForm.get('name')?.touched" formControlName="name"
+                                type="text" class="form-control" placeholder="Name"
+                                >
+                                <div *ngIf="addForm.get('name')?.errors?.['required']" class="invalid-feedback">Name is required <br> No more than 30 characters </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Category</label>
+                                <input list="types"
+                                [class.is-invalid]="addForm.get('productType')?.invalid&&addForm.get('productType')?.touched"
+                                formControlName="productType" type="text" class="form-control" placeholder="Category"
+                                >
+                                <datalist id="types">
+                                    <option  *ngFor="let type of types"  [value]="type.name">
+                                </datalist>
+                                <div *ngIf="addForm.get('productType')?.errors?.['required']" class="invalid-feedback">Category is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Style</label>
+                                <input list="styles"
+                                [class.is-invalid]="addForm.get('style')?.invalid&&addForm.get('style')?.touched"
+                                formControlName="style" type="text" class="form-control" placeholder="Style"
+                                >
+                                <datalist id="styles">
+                                    <option  *ngFor="let style of styles"  [value]="style.name">
+                                </datalist>
+                                <div *ngIf="addForm.get('style')?.errors?.['required']" class="invalid-feedback">Style is required</div>
+                            </div>
+                        </div>
+                        <div class="formStyles d-flex justify-content-between">
+                            <div class="form-group">
+                                <label>Brand</label>
+                                <input list="brands"
+                                [class.is-invalid]="addForm.get('productBrand')?.invalid&&addForm.get('productBrand')?.touched"
+                                formControlName="productBrand" type="text" class="form-control" placeholder="Brand"
+                                >
+                                <datalist id="brands">
+                                    <option  *ngFor="let brand of brands"  [value]="brand.name">
+                                </datalist>
+                                <div *ngIf="addForm.get('brand')?.errors?.['required']" class="invalid-feedback">Brand is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Color</label>
+                                <input list="colors"
+                                [class.is-invalid]="addForm.get('color')?.invalid&&addForm.get('color')?.touched"
+                                formControlName="color" type="text" class="form-control" placeholder="Color"
+                                >
+                                <datalist id="colors">
+                                    <option  *ngFor="let color of colors"  [value]="color.name">
+                                </datalist>
+                                <div *ngIf="addForm.get('color')?.errors?.['required']" class="invalid-feedback">Color is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Dimensions</label>
+                                <input [class.is-invalid]="addForm.get('dimensions')?.invalid&&addForm.get('dimensions')?.touched"
+                                formControlName="dimensions" type="text" class="form-control" placeholder="Dimensions">
+                                <div *ngIf="addForm.get('dimensions')?.errors?.['required']" class="invalid-feedback">Dimensions is required</div>
+                            </div>
+                        </div>
+                        <div class="formStyles d-flex justify-content-between">
+                            <div class="form-group">
+                                <label>Purchasing Price</label>
+                                <input [class.is-invalid]="addForm.get('pPrice')?.invalid&&addForm.get('pPrice')?.touched"
+                                formControlName="pPrice" type="number" class="form-control" placeholder="Purchasing Price">
+                                <div *ngIf="addForm.get('pPrice')?.errors?.['required']" class="invalid-feedback">Purchasing Price is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Selling Price</label>
+                                <input [class.is-invalid]="addForm.get('sPrice')?.invalid&&addForm.get('sPrice')?.touched"
+                                formControlName="sPrice" type="number" class="form-control" placeholder="Selling Price">
+                                <div *ngIf="addForm.get('sPrice')?.errors?.['required']" class="invalid-feedback">Selling Price is required</div>
+                            </div>
+
+                            <div class="form-group">
+                            <label>Disount</label>
+                            <input list="Discounts"
+                            [class.is-invalid]="addForm.get('discount')?.invalid&&addForm.get('discount')?.touched"
+                            formControlName="discount" type="number" class="form-control" placeholder="Disount">
+                            <div *ngIf="addForm.get('discount')?.errors?.['required']" class="invalid-feedback">Discount is required</div>
+                            <datalist id="Discounts">
+                                <option  *ngFor="let discount of discounts"  [value]="discount.discount_Percent">
+                            </datalist>
+                        </div>
+                        </div>
+                        <div class="formStyles d-flex justify-content-between ">
+                            <div class="form-group">
+                                <label>Supplier</label>
+                                <input list="Suppliers"
+                                [class.is-invalid]="addForm.get('supplier')?.invalid&&addForm.get('supplier')?.touched"
+                                formControlName="supplier" type="text" class="form-control" placeholder="Supplier"
+                                >
+                                <datalist id="Suppliers">
+                                    <option  *ngFor="let supplier of suppliers"  [value]="supplier.companyName">
+                                </datalist>
+                                <div *ngIf="addForm.get('supplier')?.errors?.['required']" class="invalid-feedback">Supplier is required</div>
+                            </div>
+                            <div class="form-group me-5">
+                                <label>Stock</label>
+                                <input [class.is-invalid]="addForm.get('stock')?.invalid&&addForm.get('stock')?.touched"
+                                formControlName="stock" type="number" class="form-control" placeholder="Stock">
+                                <div *ngIf="addForm.get('stock')?.errors?.['required']" class="invalid-feedback">Stock is required</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Special Feature</label>
+                                <input [value]="product.specialFeature" type="text" class="form-control" placeholder="Special Feature">
+                            </div>
+                            </div>
+                        <div class="form-group desc">
+                            <label>Describtion</label>
+                            <textarea [class.is-invalid]="addForm.get('describtion')?.invalid&&addForm.get('describtion')?.touched"
+                            formControlName="describtion" type="text" class="form-control" placeholder="Describtion"></textarea>
+                            <div *ngIf="addForm.get('describtion')?.errors?.['required']" class="invalid-feedback">describtion is required</div>
+                        </div>
+                        <div class="chooseImg">
+                            <input type="file" class="file-input"
+                            [class.is-invalid]="addForm.get('pictureURL')?.invalid&&addForm.get('pictureURL')?.touched"
+                            formControlName="pictureURL"
+                            [accept]="requiredFileType"
+                            (change)="onFileSelected($event)" #fileUpload>
+                            <div class="file-upload d-flex align-items-end" >
+                                <!-- <button mat-mini-fab style="height: 40px; width: 150px; padding: 0px;" class="me-2"
+                                [class.is-invalid]="addForm.get('pictureURL')?.invalid&&addForm.get('pictureURL')?.touched"
+                                formControlName="pictureURL"
+                                (click)="fileUpload.click()">
+                                Choose Image
+                                </button> -->
+                                {{fileName || "No file uploaded yet."}}
+                            </div>
+                            <div *ngIf="addForm.get('pictureURL')?.errors?.['required']" class="invalid-feedback">Picture is required</div>
+                        </div>
+                        <button [disabled]="addForm.invalid" type="submit">UPDATE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Profile Authentication Area -->

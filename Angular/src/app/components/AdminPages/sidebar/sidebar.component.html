@@ -1,0 +1,104 @@
+<!-- <div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <ul>
+            <li *ngFor="let item of menuItems">
+                <a  mat-list-item class="nav-link"  [routerLink]="'/'+item"  routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"> {{item | titlecase}} </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+        <app-products></app-products>
+    </div>
+</div> -->
+<section class="top-header-area">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <ul class="top-header-contact-info">
+                    <li><a href="+44458895456"><i class='bx bx-phone-call'></i> +44 458 895 456</a></li>
+                    <li><a href="mailto:hello@fiwan.com"><i class='bx bx-envelope'></i> hello@Homi.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="top-header-right">
+                    <ul class="d-flex align-items-center justify-content-end">
+                        <ng-container *ngIf="(accoutService.currentUser$ | async)==null" >
+                            <li><a routerLink="/login" style="padding-left: 25px;"><i class='bx bx-log-in'></i> Sign In</a></li>
+                            <li><a routerLink="/register"><i class='bx bx-user'></i> Sign Up</a></li>
+                        </ng-container>
+                        <ng-container *ngIf="accoutService.currentUser$ | async as user"  >
+                            <li>Welcome {{user.displayName}}</li>
+                            <li (click)="accoutService.logout()" style="cursor: pointer;"><a><i class='bx bx-log-in'></i>LogOut</a></li>
+
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Top Header Area -->
+
+<!-- Start Navbar Area -->
+<div class="navbar-area">
+    <div class="fiwan-responsive-nav">
+        <div class="container">
+            <div class="fiwan-responsive-menu">
+                <div class="logo">
+                    <a routerLink="/"><img src="assets\img\HOMILogo5.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fiwan-nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" routerLink="/"><img src="assets\img\HOMILogo5.png" alt="logo" width="150"></a>
+
+                <div class="collapse navbar-collapse mean-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a  routerLink="/" href="javascript:void(0)" class=" nav-link">Home</a>
+                        <li class="nav-item" *ngFor="let item of menuItems">
+                            <a mat-list-item class="nav-link" [routerLink]="'/'+item" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"> {{item | titlecase}} </a>
+                        </li>
+                    </ul>
+
+                    <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                            <div class="side-menu-btn">
+                                <i class="bx bx-menu-alt-left" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <div class="others-option-for-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="inner">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <div class="circle circle-three"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="option-inner">
+                    <div class="others-option d-flex align-items-center justify-content-center">
+                        <div class="option-item">
+                            <div class="side-menu-btn">
+                                <i class="bx bx-menu-alt-left" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+<!-- End Navbar Area -->

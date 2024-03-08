@@ -1,0 +1,16 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start 404 Error Area -->
+<section class="error-area ptb-100" style="padding-top: 0px;">
+    <div class="container">
+        <div class="error-content" *ngFor="let Content of successContent;">
+            <img [src]="Content.img" alt="image" style="width: 50%;">
+            <!-- <div class="d-flex  justify-content-evenly">
+                <a routerLink="/" class="default-btn"><i class='bx bx-home-circle'></i> BACK TO HOMEPAGE</a>
+                <a *ngIf="order" routerLink="/orders/{{order.id}}" class="default-btn"><i class='bx bx-home-circle'></i> VIEW YOUR ORDER</a>
+                <a *ngIf="!order" routerLink="/orders" class="default-btn"><i class='bx bx-home-circle'></i> VIEW YOUR ORDERS</a>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- End 404 Error Area -->

@@ -1,0 +1,140 @@
+.faq-accordion {
+    .accordion-item {
+        margin-bottom: 15px;
+        border-radius: 0 !important;
+        border: none;
+        display: block;
+        flex-direction: unset;
+        text-align: left;
+        box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
+
+        .accordion-header {
+            padding: 0;
+            border: none;
+            text-align: left;
+            background-color: var(--whiteColor);
+
+            .accordion-button {
+                display: block;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                box-shadow: unset;
+                color: var(--blackColor);
+                text-align: left;
+                position: relative;
+                border-bottom: 1px solid #eeeeee;
+                transition: var(--transition);
+                font: {
+                    size: 18px;
+                    weight: 600;
+                };
+                padding: {
+                    top: 20px;
+                    bottom: 18px;
+                    left: 20px;
+                    right: 20px;
+                };
+                &::before {
+                    content: "\ea4a";
+                    position: absolute;
+                    right: 20px;
+                    transition: var(--transition);
+                    top: 50%;
+                    transform: translateY(-50%) rotate(180deg);
+                    font: {
+                        family: 'boxicons';
+                        size: 20px;
+                    };
+                }
+                &.collapsed {
+                    border-bottom-width: 0;
+
+                    &::before {
+                        transform: translateY(-50%) rotate(0);
+                    }
+                }
+            }
+        }
+        .accordion-body {
+            ul {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                li {
+                    margin-bottom: 12px;
+                    color: var(--optionalColor);
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .faq-accordion {
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 15px;
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                        left: 15px;
+                        right: 30px;
+                    };
+                    &::before {
+                        right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

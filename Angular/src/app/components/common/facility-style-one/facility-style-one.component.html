@@ -1,0 +1,23 @@
+<!-- Start Facility Area -->
+<section class="facility-area ptb-100 bg-f5f5f5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12">
+                <div class="facility-content">
+                    <div class="item" *ngFor="let Content of facilityContent;">
+                        <i class='{{Content.icon}}'></i>
+                        <h3>{{Content.title}}</h3>
+                        <p>{{Content.paragraph}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="facility-image text-center" *ngFor="let Image of facilityImage;">
+                    <img [src]="Image.img" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Facility Area -->

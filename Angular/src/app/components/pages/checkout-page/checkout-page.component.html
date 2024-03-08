@@ -1,0 +1,198 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Checkout Area -->
+<section class="checkout-area ptb-100">
+    <div class="container">
+
+        <form *ngIf="checkoutForm" [formGroup]="checkoutForm">
+            <div class="row" >
+                <div class="col-lg-6 col-md-12" formGroupName="AddressForm">
+                    <div class="billing-details">
+                        <h3 class="title">Billing Details</h3>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>First Name <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('firstName')?.invalid&&checkoutForm.get('AddressForm')?.get('firstName').touched"
+                                    formControlName="firstName"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('firstName')?.errors?.['required']" class="invalid-feedback">
+                                        First Name is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Last Name <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('lastName')?.invalid&&checkoutForm.get('AddressForm')?.get('lastName').touched"
+                                    formControlName="lastName"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('lastName')?.errors?.['required']" class="invalid-feedback">
+                                        Last Name is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    <label>Street <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('street')?.invalid&&checkoutForm.get('AddressForm')?.get('street').touched"
+                                    formControlName="street"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('street')?.errors?.['required']" class="invalid-feedback">
+                                        Street is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    <label>Town / City <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('city')?.invalid&&checkoutForm.get('AddressForm')?.get('city').touched"
+
+                                    formControlName="city"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('city')?.errors?.['required']" class="invalid-feedback">
+                                        City is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>State / County <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('state')?.invalid&&checkoutForm.get('AddressForm')?.get('state').touched"
+
+                                    formControlName="state"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('state')?.errors?.['required']" class="invalid-feedback">
+                                        State / County is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Postcode / Zip <span class="required">*</span></label>
+                                    <input
+                                    [class.is-invalid]="checkoutForm.get('AddressForm')?.get('zipcode')?.invalid&&checkoutForm.get('AddressForm')?.get('zipcode').touched"
+
+                                    formControlName="zipcode"
+                                    type="text" class="form-control">
+                                    <div *ngIf="checkoutForm.get('AddressForm')?.get('zipcode')?.errors?.['required']" class="invalid-feedback">
+                                        Zipcode is required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-12 col-md-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="ship-different-address">
+                                    <label class="form-check-label" for="ship-different-address">Save as default address</label>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="order-details">
+                        <h3 class="title">Your Order</h3>
+                        <div class="order-table table-responsive" *ngIf="(cartService.cartSource$ | async) as cart">
+                            <table class="table table-bordered">
+                                <tbody *ngFor="let item of cart.items">
+                                    <tr>
+                                        <td class="product-name" style="padding-right: 55px !important"><a routerLink="/shop-left-sidebar-2/{{item.id}}">{{item.productName}}</a></td>
+                                        <td class="product-total">
+                                            <span class="subtotal-amount">{{item.price | currency}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <tbody *ngIf="(cartService.cartTotalsource$ | async) as total">
+                                    <tr>
+                                        <td class="order-subtotal"><span>Cart Subtotal</span></td>
+                                        <td class="order-subtotal-price">
+                                            <span class="order-subtotal-amount">{{total.subTotal | currency}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-shipping"><span>Shipping</span></td>
+                                        <td class="shipping-price">
+                                            <span>{{total.shipping | currency}}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="total-price"><span>Order Total</span></td>
+                                        <td class="product-subtotal">
+                                            <span class="subtotal-amount">{{total.Total | currency}}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="payment-box">
+                            <div class="payment-method">
+                                <p>
+                                    <input type="radio" id="paypal" name="radio-group">
+                                    <label for="paypal">PayPal</label>
+                                </p>
+                                <div class="m-2 payment" formGroupName="PaymentForm" >
+                                    <div class="form-group">
+                                        <label>Name On Card <span class="required">*</span></label>
+                                        <input
+                                        [class.is-invalid]="checkoutForm.get('PaymentForm')?.get('nameOnCard')?.invalid&&checkoutForm.get('PaymentForm')?.get('nameOnCard').touched"
+                                        formControlName="nameOnCard"
+                                        type="text" class="form-control">
+                                        <div *ngIf="checkoutForm.get('PaymentForm')?.get('nameOnCard')?.errors?.['required']" class="invalid-feedback">
+                                            Name On Card is required
+                                        </div>
+                                    </div>
+                                    <div class="form-group"  >
+                                        <label>Card Number<span class="required">*</span></label>
+                                        <div class="form-control" #CardNumber></div>
+                                    </div>
+
+                                    <div class="form-group" >
+                                        <label>Card Expiry <span class="required">*</span></label>
+                                        <div class="form-control" #cardExpiry></div>
+                                    </div>
+                                    <div class="form-group" >
+                                        <label>Card Cvc <span class="required">*</span></label>
+                                        <div class="form-control" #cardcvc></div>
+                                    </div>
+                                    <span class="text-danger">{{cardErrors}}</span>
+                                </div>
+                                <p>
+                                    <input type="radio" id="cash-on-delivery" name="radio-group">
+                                    <label for="cash-on-delivery">Cash on Delivery</label>
+                                </p>
+                            </div>
+                            <button type="submit" (click)="submitOrder()" class="default-btn"><i class='bx bx-paper-plane'></i> PLACE ORDER</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End Checkout Area -->

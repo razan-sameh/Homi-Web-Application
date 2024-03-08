@@ -1,0 +1,27 @@
+<!-- Start Main Banner Area -->
+<div class="home-slides-two">
+    <owl-carousel-o [options]="homeSlidesOptions">
+        <ng-template carouselSlide *ngFor="let Content of mainBannerItem;">
+            <div class="banner-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="banner-content">
+                                <h1>{{Content.title}}</h1>
+                                <p>{{Content.paragraph}}</p>
+                                <a routerLink="/{{Content.buttonLink}}" class="default-btn"><i class="{{Content.buttonIcon}}"></i> {{Content.buttonText}}</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-12">
+                            <div class="banner-image bg-color1">
+                                <img [src]="Content.image" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+<!-- End Main Banner Area -->

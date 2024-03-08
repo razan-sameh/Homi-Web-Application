@@ -1,0 +1,169 @@
+<app-sidebar></app-sidebar>
+<!-- Start Page Title Area -->
+<div class="page-title-area"  *ngIf="product"
+>
+    <h1>{{product.name}}</h1>
+    <ul>
+        <li><a routerLink="/Products">Products</a></li>
+        <li>{{product.name}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Products Details Area -->
+<section class="products-details-area ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12"  *ngIf="product">
+                <div class="products-details-image">
+                    <a href="{{product.pictureURL}}" class="popup-btn">
+                        <img src="{{product.pictureURL}}" alt="image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12"  *ngIf="product">
+                <div class="products-details-desc">
+                    <h3>{{product.name}}</h3>
+                    <div class="products-meta">
+                        <span>Purchasing Price:
+                            <span class="in-stock">{{product.pPrice}}</span>
+                        </span>
+                        <span>Selling Price:
+                            <span class="in-stock">{{product.sPrice}}</span>
+                        </span>
+                        <span>Discount:
+                            <span class="in-stock">{{product.discount}}</span>
+                        </span>
+                        <span>Stock:
+                            <span class="in-stock">{{product.stock}}</span>
+                        </span>
+                        <span>Categories: <a routerLink="/">{{product.productType}}</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="products-details-tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="additional-information-tab" data-bs-toggle="tab" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional Information</button>
+                        </li>
+                        <!-- <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                        </li> -->
+                    </ul>
+                    <div class="tab-content" id="myTabContent" *ngIf="product">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <p>{{product.describtion}}</p>
+                        </div>
+                        <div class="tab-pane fade" id="additional-information" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <tbody  *ngIf="product">
+                                        <tr>
+                                            <td>Color</td>
+                                            <td>{{product.color}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dimensions</td>
+                                            <td>{{product.dimensions}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Style</td>
+                                            <td>{{product.style}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brand</td>
+                                            <td>{{product.productBrand}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Special Feature</td>
+                                            <td>{{product.specialFeature}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <div class="products-review-comments">
+                                <div class="user-review">
+                                    <img src="assets/img/user1.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                        </div>
+                                        <span class="d-inline-block">James Anderson</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Excellent</span>
+                                    <p>Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user2.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <span class="d-inline-block">Sarah Taylor</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Video Quality!</span>
+                                    <p>Was really easy to implement and they quickly answer my additional questions!</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user3.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                        </div>
+                                        <span class="d-inline-block">David Warner</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Perfect Coding!</span>
+                                    <p>Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice support.</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user4.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <span class="d-inline-block">King Kong</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Perfect Video!</span>
+                                    <p>Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice support.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between" *ngIf="product">
+                <div class="m-5">
+                        <a routerLink="/updateProduct/{{product.product_ID}}" class="default-btn"><i class='bx bx-paper-plane'></i>UPDATE PRODUCT</a>
+                </div>
+                <div class="m-5">
+                        <a routerLink="/products" class="default-btn" (click)="removeItem(product.product_ID)"><i class='bx bx-paper-plane'></i>DELETE PRODUCT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Products Details Area -->
+

@@ -1,0 +1,27 @@
+<!-- Start Testimonials Area -->
+<section class="testimonials-area ptb-100">
+    <div class="container">
+        <div class="section-title" *ngFor="let Content of sectionTitle;">
+            <span class="sub-title">{{Content.subTitle}}</span>
+            <h2>{{Content.title}}</h2>
+        </div>
+
+        <div class="testimonials-slides">
+            <owl-carousel-o [options]="testimonialsSlidesOptions">
+                <ng-template carouselSlide *ngFor="let Content of singleTestimonialsItem;">
+                    <div class="single-testimonials-item">
+                        <p>{{Content.feedback}}</p>
+                        <div class="clients-info d-flex align-items-center justify-content-center">
+                            <img [src]="Content.authorImg" alt="image">
+                            <div class="info">
+                                <h3>{{Content.authorName}}</h3>
+                                <span>{{Content.authorDesignation}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<!-- End Testimonials Area -->

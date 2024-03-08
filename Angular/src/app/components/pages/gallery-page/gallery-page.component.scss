@@ -1,0 +1,22 @@
+.single-gallery-item {
+    z-index: 1;
+    cursor: zoom-in;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+
+    a {
+        display: block;
+        
+        img {
+            transition: var(--transition);
+        }
+    }
+    &:hover {
+        a {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

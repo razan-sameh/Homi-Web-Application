@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\3a22a890-f387-48f6-9ca7-0b88e67ca0b0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3a22a890-f387-48f6-9ca7-0b88e67ca0b0.jpg"
+    },
+    {
+      "Id": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\604bf949-d95a-4868-8b2b-83904f8e70b8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\604bf949-d95a-4868-8b2b-83904f8e70b8.jpg"
+    },
+    {
+      "Id": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\79db1ea0-50fb-4106-a3ac-d2e32ffcf872.jpg",
+      "PackagePath": "staticwebassets\\uploads\\79db1ea0-50fb-4106-a3ac-d2e32ffcf872.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

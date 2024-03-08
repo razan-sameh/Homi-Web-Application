@@ -1,0 +1,22 @@
+<!-- Start Discount Area -->
+<section class="discount-area bg-fafafa">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12" *ngFor="let Content of discountContent;">
+                <div class="discount-content">
+                    <h2>{{Content.title}}</h2>
+                    <span class="discount">{{Content.discount}}</span>
+                    <a routerLink="/{{Content.buttonLink}}" class="default-btn"><i class="{{Content.buttonIcon}}"></i> {{Content.buttonText}}</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="discount-image text-center" *ngFor="let Image of discountImage;">
+                    <img [src]="Image.mainImg" alt="image">
+                    <img [src]="Image.discountParcentImg" alt="image" class="discount">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Discount Area -->

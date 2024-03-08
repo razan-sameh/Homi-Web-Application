@@ -1,0 +1,134 @@
+.deal-of-the-week-area {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 130px;
+        z-index: -1;
+        position: absolute;
+        background-color: var(--whiteColor);
+    }
+}
+.deal-of-the-week-content {
+    text-align: center;
+    max-width: 720px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+    p {
+        max-width: 650px;
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 20px;
+        };
+    }
+    .discount {
+        color: red;
+        display: block;
+        line-height: 1;
+        font: {
+            size: 40px;
+            weight: 300;
+        };
+        strong {
+            font-weight: 700;
+            font-size: 50px;
+        }
+    }
+    .default-btn {
+        margin-top: 25px;
+    }
+}
+.deal-of-the-week-image {
+    margin-top: 80px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .deal-of-the-week-area {
+        &::before {
+            height: 8%;
+        }
+    }
+    .deal-of-the-week-content {
+        h2 {
+            font-size: 24px;
+        }
+        .discount {
+            font-size: 25px;
+
+            strong {
+                font-size: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .deal-of-the-week-content {
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            max-width: 600px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .discount {
+            font-size: 30px;
+
+            strong {
+                font-size: 40px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .deal-of-the-week-content {
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

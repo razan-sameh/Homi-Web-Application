@@ -1,0 +1,256 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area mt-0" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Products Area -->
+<section class="products-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <aside class="widget-area left-widget-area">
+                    <div class="widget widget_search">
+                        <form class="search-form">
+                            <label>
+                                <input type="search" (keyup.enter)="onSearch()" class="search-field" placeholder="Search..." #search>
+                            </label>
+                            <button type="submit" ><i class="bx bx-search-alt" (click)="onSearch()"></i></button>
+                        </form>
+                    </div>
+<div class="mt-3 mb-3">
+                    <div *ngIf="activeFilters.length > 0">
+                        <span>Active Filters:</span>
+                        <span *ngFor="let filter of activeFilters">
+                            <span class="badge badge-pill badge-secondary mr-2" style="color: rgb(24, 213, 172);">{{ filter.name }}: {{ filter.value }}</span>
+                            <a (click)="removeFilter(filter)" class="text-muted" style="color: rgb(24, 213, 172);">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Categories</h3>
+
+                        <ul>
+                            <li *ngFor="let type of types"
+                            [class.active]="type.id == shopParams.typeId"
+                            (click)="onTypeSelected(type.id)"
+                            >
+                                <a routerLink="/shop-left-sidebar-2">{{type.name}}</a>
+                            <!-- <span class="post_count">(5)</span> -->
+                            </li>
+                            <!-- <li><a routerLink="/shop-left-sidebar-1">Accessories</a><span class="post_count">(5)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Men</a><span class="post_count">(7)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Women</a><span class="post_count">(3)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Sofa</a><span class="post_count">(2)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Uncategorized</a><span class="post_count">(8)</span></li> -->
+                        </ul>
+                    </div>
+                            <!-- new -->
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Styles</h3>
+
+                        <ul>
+                            <li *ngFor="let style of styles"
+                            [class.active]="style.id == shopParams.styleId"
+                            (click)="onStyleSelected(style.id)"
+                            ><a routerLink="/shop-left-sidebar-2">{{style.name}}</a>
+                            <!-- <span class="post_count">(5)</span> -->
+                            </li>
+                        </ul>
+                    </div>
+                            <!-- new -->
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Brands</h3>
+
+                        <ul>
+                            <li *ngFor="let brand of brands"
+                                [class.active]="brand.id == shopParams.brandId"
+                                [value]="brand.id"
+                                (click)="onBrandSelected(brand.id)"
+                            ><a routerLink="/shop-left-sidebar-2">{{brand.name}}</a>
+                            <!-- <span class="post_count">(5)</span> -->
+                            </li>
+                            <!-- <li><a routerLink="/shop-left-sidebar-1">Accessories</a><span class="post_count">(5)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Men</a><span class="post_count">(7)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Women</a><span class="post_count">(3)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Sofa</a><span class="post_count">(2)</span></li>
+                            <li><a routerLink="/shop-left-sidebar-1">Uncategorized</a><span class="post_count">(8)</span></li> -->
+                        </ul>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="widget widget_colors">
+                        <h3 class="widget-title">Filter By Color</h3>
+
+                        <ul>
+                            <li *ngFor="let color of colors"
+                            [class.active]="color.id == shopParams.colorId"
+                            [value]="color.id"
+                            (click)="onColorSelected(color.id)">
+                                <a href="javascript:void(0)">
+                                    <span class="{{color.name}}">{{color.name}}</span>
+                                    <span>{{color.name}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="widget widget_price_filter">
+                        <h3 class="widget-title">Filter by Price</h3>
+
+                        <div class="collection_filter_by_price">
+                            <input class="js-range-of-price" type="text" data-min="0" data-max="1055" name="filter_by_price" data-step="10">
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="widget widget_top_rated_products">
+                        <h3 class="widget-title">Our Best Sellers</h3>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg1" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Long Sleeve Leopard</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg2" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Causal V-Neck Soft</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg3" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Yidarton Women's Comfy</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/slider-product" class="thumb"><span class="fullimage cover bg4" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/slider-product">Womens Tops Color</a></h4>
+                                <div class="star-rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </div>
+                                <span class="price">$150.00</span>
+                            </div>
+                        </article>
+                    </div> -->
+                </aside>
+            </div>
+
+            <div class="col-lg-8 col-md-12">
+                <div class="fiwan-grid-sorting row align-items-center">
+                    <div class="col-lg-6 col-md-6 result-count">
+                        <div class="d-flex align-items-center">
+                            <!-- error because he passes the data from parent to child (he have a moule called shop) we have a different structure -->
+                            <!-- <app-paging-header
+                            [totalCount]="totalCount"
+                            [pageNumber]="shopParams.pageNumber"
+                            [pageSize]="shopParams.pageSize"
+                            ></app-paging-header> -->
+                            <span *ngIf="totalCount>0">Showing
+                                <strong> {{(shopParams.pageNumber-1)*shopParams.pageSize+1}}-
+                                    {{shopParams.pageNumber * shopParams.pageSize>totalCount
+                                    ?totalCount
+                                    : shopParams.pageNumber * shopParams.pageSize
+                                    }}
+                                </strong> of
+                                <strong>
+                                    {{totalCount}}
+                                </strong> Result
+                            </span>
+                            <span *ngIf="totalCount===0">
+                                Thera are <strong> 0 </strong> Results for This Filter.
+                            </span>
+                            <!-- <p>We found <span class="count">09</span> products available for you</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 ordering">
+                        <div class="select-box">
+                            <label>Sort By:</label>
+                            <ngx-select-dropdown (change)="onSortSelected($event)" tabindex="0" [multiple]="false" [(ngModel)]="singleSelect" [config]="config" [options]="sortOptions"></ngx-select-dropdown>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-md-6" *ngFor="let product of products
+                    | paginate: {itemsPerPage: '{{shopParams.PageSize}}', currentPage: '{{shopParams.pageNumber}}'}">
+                        <app-product-item [product] = "product"> </app-product-item>
+                    </div>
+
+                    <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div class="pagination-area text-center">
+                            <pagination-controls  *ngIf="totalCount && '{{shopParams.PageSize}}'"
+                            (pageChange)="onPageChanged($event)"
+                            ></pagination-controls>
+                        </div>
+                    </div>
+<!-- msh fasalt el pagination f component (lec73) -->
+                    <!-- <div class="col-lg-12 col-sm-12 col-md-12" *ngIf="totalCount>0">
+                        <div class="pagination-area text-center">
+                            <pagination-controls
+                            [boundaryLinks]="true"
+                            [totalItems]="totalCount"
+                            [itemPerPage]="shopParams.PageSize"
+                            [maxSize]="4"
+                            (pageChanged)="onPageChanged($event)"
+                            previousText="&lsaquo;"
+                            nextText="&rsaquo;"
+                            firstText="&laquo;"
+                            lastText="&laquo;"
+                            firstText="&raquo;"
+                            lastText="&raquo;">
+                        </pagination-controls>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Products Area -->

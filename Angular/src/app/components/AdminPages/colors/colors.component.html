@@ -1,0 +1,57 @@
+<app-sidebar></app-sidebar>
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}}); margin-top:0px">
+    <h1>{{Content.title}}</h1>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Cart Area -->
+
+<section class="cart-area ptb-100">
+    <div class="container">
+        <div *ngIf="(colors ===null)">
+            <p>There are no colors</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="create">
+            <a routerLink="/addColors" class="default-btn"><i class='bx bx-paper-plane'></i>ADD COLOR</a>
+        </div>
+        <form>
+            <div class="cart-table table-responsive">
+                <table class="table table-bordered" *ngIf="(colors != null)">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let item of colors">
+                            <td class="product-thumbnail">
+                                <span style="font-weight: 700;">#{{item.id}}</span>
+                            </td>
+
+                            <td class="product-name">
+                                <span>{{item.name}}</span>
+                            </td>
+
+                            <td class="product-price">
+                                <a [routerLink]="{ outlets: { 'admin': 'updateColor/'+[item.id] } }">Update</a>
+                            </td>
+
+                            <td class="product-subtotal">
+                                <a [routerLink]="{ outlets: { 'admin': 'Colors'} }" class="remove" (click)="removeItem(item.id)"><i class='bx bx-trash'></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End Cart Area -->

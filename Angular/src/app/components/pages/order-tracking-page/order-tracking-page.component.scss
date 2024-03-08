@@ -1,0 +1,83 @@
+.order-tracking-content {
+    max-width: 600px;
+    padding: 40px;
+    background-color: var(--whiteColor);
+    box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    form {
+        .form-group {
+            margin-bottom: 25px;
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+        }
+        .default-btn {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: {
+                left: 30px;
+                right: 30px;
+            };
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .order-tracking-content {
+        max-width: 100%;
+        padding: 20px;
+
+        form {
+            .form-group {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .order-tracking-content {
+        max-width: 720px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

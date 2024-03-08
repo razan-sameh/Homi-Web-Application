@@ -1,0 +1,17 @@
+<!-- Start Partner Area -->
+<section class="partner-area ptb-70 bg-f5f5f5">
+    <div class="container">
+        <div class="partner-slides">
+            <owl-carousel-o [options]="partnerSlidesOptions">
+                <ng-template carouselSlide *ngFor="let Partner of partnerItem;">
+                    <div class="partner-item">
+                        <a href="{{Partner.link}}" target="_blank">
+                            <img [src]="Partner.img" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<!-- End Partner Area -->

@@ -1,0 +1,92 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Contact Area -->
+<section class="contact-area pt-100">
+    <div class="container">
+        <div class="contact-inner-area">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="contact-form">
+                        <form #contactForm="ngForm" (ngSubmit)="submit(contactForm.value)">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input required minlength="3" maxlength="50" ngModel name="name" type="text" #name="ngModel" class="form-control" id="name" placeholder="Your name">
+                                        <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                                            <div *ngIf="name.errors.required">Name is required.</div>
+                                            <div *ngIf="name.errors.minlength">Name is minimum {{ name.errors.minlength.requiredLength }} character.</div>
+                                            <div *ngIf="name.errors.maxlength">Name is maximum 50 character.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input required ngModel name="email" type="text" #email="ngModel" class="form-control" id="email" placeholder="Your email address">
+                                        <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Email Address is required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group mb-3">
+                                        <input required ngModel name="number" type="text" #number="ngModel" class="form-control" id="number" placeholder="Your phone number">
+                                        <div class="alert alert-danger" *ngIf="number.touched && !number.valid">Phone number is required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group mb-3">
+                                        <textarea required ngModel #message="ngModel" name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Write your message..."></textarea>
+                                        <div class="alert alert-danger" *ngIf="message.touched && !name.valid">Message is required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="default-btn" [class.disabled]="!contactForm.valid"><i class='bx bx-paper-plane'></i> SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="contact-info-box">
+                        <div class="icon">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <h3>Our Address</h3>
+                        <p>175 5th Ave, New York, NY 10010, United States Of America</p>
+                    </div>
+                    <div class="contact-info-box">
+                        <div class="icon">
+                            <i class='bx bx-phone-call'></i>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>Mobile: <a href="tel:+44457895789">(+44) - 45789 - 5789</a></p>
+                        <p>E-mail: <a href="mailto:hello@fiwan.com">hello@fiwan.com</a></p>
+                    </div>
+                    <div class="contact-info-box">
+                        <div class="icon">
+                            <i class='bx bx-time-five'></i>
+                        </div>
+                        <h3>Hours of Operation</h3>
+                        <p>Monday - Friday: 09:00 - 20:00</p>
+                        <p>Sunday & Saturday: 10:30 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Area -->
+
+<!-- Start Map Area -->
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185268459418!3d40.74117737932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3f81d549f%3A0xb2a39bb5cacc7da0!2s175%205th%20Ave%2C%20New%20York%2C%20NY%2010010%2C%20USA!5e0!3m2!1sen!2sbd!4v1588746137032!5m2!1sen!2sbd"></iframe>
+</div>
+<!-- End Map Area -->

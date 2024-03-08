@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "6E7zSn7lVYMHbnevH1g0tigaA7/L7oTO9dsGxzw11TQ=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\3a22a890-f387-48f6-9ca7-0b88e67ca0b0.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/3a22a890-f387-48f6-9ca7-0b88e67ca0b0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\3a22a890-f387-48f6-9ca7-0b88e67ca0b0.jpg"
+    },
+    {
+      "Identity": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\604bf949-d95a-4868-8b2b-83904f8e70b8.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/604bf949-d95a-4868-8b2b-83904f8e70b8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\604bf949-d95a-4868-8b2b-83904f8e70b8.jpg"
+    },
+    {
+      "Identity": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\uploads\\79db1ea0-50fb-4106-a3ac-d2e32ffcf872.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Razan\\ITI-Projects\\Grad Project\\Final\\HOMIAPP-V20\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/79db1ea0-50fb-4106-a3ac-d2e32ffcf872.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\79db1ea0-50fb-4106-a3ac-d2e32ffcf872.jpg"
+    }
+  ]
+}

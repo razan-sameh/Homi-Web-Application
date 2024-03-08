@@ -1,0 +1,28 @@
+<!-- Start Coming Soon Area -->
+<div class="coming-soon-area" *ngFor="let Content of comingSoonContent;" style="background-image: url({{Content.bgImage}});">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="coming-soon-content">
+                    <a routerLink="/" class="logo">
+                        <img src="assets/img/logo.png" alt="image">
+                    </a>
+                    <h2>{{Content.title}}</h2>
+                    <div id="timer" class="flex-wrap d-flex">
+                        <div id="days" class="align-items-center flex-column d-flex justify-content-center">{{days}} <span>Days</span></div>
+                        <div id="hours" class="align-items-center flex-column d-flex justify-content-center">{{hours}} <span>Hours</span></div>
+                        <div id="minutes" class="align-items-center flex-column d-flex justify-content-center">{{minutes}} <span>Minutes</span></div>
+                        <div id="seconds" class="align-items-center flex-column d-flex justify-content-center">{{seconds}} <span>Seconds</span></div>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="input-newsletter" placeholder="Enter your email" name="EMAIL" required autocomplete="off">
+                        </div>
+                        <button type="submit" class="default-btn"><i class='bx bx-paper-plane'></i> SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Coming Soon Area -->

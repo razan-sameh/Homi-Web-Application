@@ -1,0 +1,30 @@
+<!-- Start Blog Area -->
+<section class="blog-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title" *ngFor="let Content of sectionTitle;">
+            <h2>{{Content.title}}</h2>
+            <p>{{Content.paragraph}}</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6" *ngFor="let Content of singleBlogPost;">
+                <div class="single-blog-post">
+                    <div class="post-image">
+                        <a routerLink="/{{Content.link}}" class="d-block">
+                            <img [src]="Content.img" alt="image">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <ul class="meta">
+                            <li><i class="bx bx-purchase-tag"></i> <a routerLink="/{{Content.link}}">{{Content.tag}}</a></li>
+                        </ul>
+                        <h3><a routerLink="/{{Content.link}}">{{Content.title}}</a></h3>
+                        <p>{{Content.paragraph}}</p>
+                        <a routerLink="/{{Content.link}}" class="link-btn">{{Content.linkText}} <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->

@@ -1,0 +1,38 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row" style="justify-content: center;">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Forgot your Password?</h2>
+
+                    <form [formGroup]="forgotPasswordForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input [class.is-invalid]="forgotPasswordForm.get('email')?.invalid&&forgotPasswordForm.get('email')?.touched"
+                            formControlName="email" type="text" class="form-control" placeholder="Email">
+                            <div *ngIf="forgotPasswordForm.get('email')?.errors?.['required']" class="invalid-feedback">Email is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input [class.is-invalid]="forgotPasswordForm.get('password')?.invalid&&forgotPasswordForm.get('password')?.touched"
+                            formControlName="password" type="password" class="form-control" placeholder="Password">
+                            <div *ngIf="forgotPasswordForm.get('password')?.errors?.['required']" class="invalid-feedback">Password is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm New Password</label>
+                            <input [class.is-invalid]="forgotPasswordForm.get('confirmPassword')?.invalid&&forgotPasswordForm.get('confirmPassword')?.touched"
+                            formControlName="confirmPassword" type="password" class="form-control" placeholder="Password">
+                            <div *ngIf="forgotPasswordForm.get('confirmPassword')?.errors?.['required']" class="invalid-feedback">Password is required</div>
+                        </div>
+
+                        <button [disabled]="forgotPasswordForm.invalid" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

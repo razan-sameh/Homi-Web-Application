@@ -1,0 +1,14 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start 404 Error Area -->
+<section class="error-area ptb-100">
+    <div class="container">
+        <div class="error-content" *ngFor="let Content of errorContent;">
+            <img [src]="Content.img" alt="image">
+            <h3>{{Content.title}}</h3>
+            <p>{{Content.paragraph}}</p>
+            <a routerLink="/" class="default-btn"><i class='bx bx-home-circle'></i> BACK TO HOMEPAGE</a>
+        </div>
+    </div>
+</section>
+<!-- End 404 Error Area -->

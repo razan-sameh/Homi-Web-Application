@@ -1,0 +1,128 @@
+.discount-area {
+    padding: {
+        top: 40px;
+        bottom: 40px;
+    };
+}
+.discount-content {
+    h2 {
+        margin-bottom: 10px;
+        font: {
+            size: 55px;
+            weight: 600;
+        };
+    }
+    .discount {
+        display: block;
+        color: red;
+        line-height: 1;
+        font: {
+            weight: 600;
+            size: 30px;
+        };
+    }
+    .default-btn {
+        margin-top: 30px;
+    }
+}
+.discount-image {
+    position: relative;
+
+    .discount {
+        top: 65px;
+        left: 20px;
+        position: absolute;
+        animation: movebounce 8s linear infinite;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .discount-content {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+        .discount {
+            font-size: 17px;
+        }
+        .default-btn {
+            margin-top: 20px;
+        }
+    }
+    .discount-image {
+        .discount {
+            top: 0;
+            left: 0;
+            width: 120px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .discount-image {
+        .discount {
+            width: auto;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .discount-content {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 30px;
+        }
+        .discount {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .discount-content {
+        h2 {
+            font-size: 45px;
+        }
+        .discount {
+            font-size: 25px;
+        }
+    }
+    .discount-image {
+        .discount {
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

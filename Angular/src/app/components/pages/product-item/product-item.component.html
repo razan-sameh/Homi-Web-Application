@@ -1,0 +1,92 @@
+<!-- <div class="row">
+    <div class="col-lg-6 col-sm-6 col-md-6" *ngFor="let Content of singleProductsItem | paginate: { itemsPerPage: 8, currentPage: shopLeftSidebar }"> -->
+        <div class="single-products-item" *ngIf="product">
+            <div class="products-image">
+                <a routerLink="/shop-left-sidebar-2/{{product.product_ID}}" class="d-block">
+                    <img [src]="product.pictureURL" alt="image">
+                </a>
+                <ul class="products-button">
+                    <!-- <li><a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView"><i class='bx bx-show-alt'></i></a></li> -->
+                    <li><a [href]="product.pictureURL" class="popup-btn"><i class='bx bx-scan'></i></a></li>
+                    <li><a routerLink="/shop-left-sidebar-2/{{product.product_ID}}"><i class='bx bx-link'></i></a></li>
+                </ul>
+                <a (click)="addItemToCart()" class="add-to-cart-btn" style="cursor: pointer;"><i class="bx bx-cart"></i> Add To Cart</a>
+            </div>
+            <div class="products-content">
+                <h3><a routerLink="/shop-left-sidebar-2/{{product.product_ID}}">{{product.name}}</a></h3>
+                <div class="price">
+                    <span class="new-price" >${{product.sPrice}}</span>
+                    <span class="old-price" *ngIf="product.discount > 0">${{product.sPrice}}</span>
+                </div>
+                <a (click)="addItemToWishList()" class="add-to-wishlist-btn"><i class="bx bx-heart"></i></a>
+            </div>
+            <span class="on-sale" *ngIf="product.discount > 0">Sale!</span>
+            <div class="out-of-stock" *ngIf="product.stock == 0">Out of Stock</div>
+        </div>
+    <!-- </div>
+    </div> -->
+<!-- <div class="single-products-item" *ngIf="product">
+    <div class="products-image">
+        <a routerLink="/simple-product" class="d-block">
+            <img [src]="product.pictureURL" alt="image" />
+        </a>
+        <ul class="products-button">
+            <li>
+                <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#productsQuickView"
+                    ><i class="bx bx-show-alt"></i
+                ></a>
+            </li>
+            <li>
+                <a href="{{ product.pictureURL }}" class="popup-btn"
+                    ><i class="bx bx-scan"></i
+                ></a>
+            </li>
+            <li>
+                <a routerLink="/simple-product"><i class="bx bx-link"></i></a>
+            </li>
+        </ul>
+        <a routerLink="/cart" class="add-to-cart-btn"
+            ><i class="bx bx-cart"></i> Add To Cart</a
+        >
+    </div>
+    <div class="products-content">
+        <h3>
+            <a routerLink="/simple-product">{{ product.name }}</a>
+        </h3>
+        <div class="price">
+            <span class="new-price">{{ product.sPrice |currency }}</span>
+            <span class="old-price" *ngIf="product.sPrice ">{{
+                product.sPrice
+            }}</span>
+        </div>
+        <a routerLink="/wishlist" class="add-to-wishlist-btn"
+            ><i class="bx bx-heart"></i
+        ></a>
+    </div>
+    <span class="on-sale" *ngIf="product.discount">{{ product.discount }}</span>
+    <div class="out-of-stock" *ngIf="product.Stock">{{ product.Stock }}</div>
+</div> -->
+
+<!-- <div class="card h-100 shadow-sm" *ngIf="product">
+
+    <div class="image position-relative" style="cursor: pointer;">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
+        <div class="d-flex align-items-center justify-content-center hover-overlay">
+            <button (click)="addItemToBasket()" class="btn btn-primary fa fa-shopping-cart me-2"></button>
+            <button routerLink="/shop/{{product.id}}" class="btn btn-primary">View</button>
+        </div>
+    </div>
+
+
+    <div class="card-body d-flex flex-column">
+        <a href="" class="text-decoration-none">
+            <h6 class="text-uppercase">
+                {{product.name}}
+            </h6>
+        </a>
+        <span class="mb-2">{{product.price | currency}}</span>
+    </div>
+</div> -->

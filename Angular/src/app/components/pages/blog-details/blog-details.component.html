@@ -1,0 +1,412 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Blog Details Area -->
+<section class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="article-image">
+                        <img src="assets/img/blog/blog6.jpg" alt="image">
+                    </div>
+
+                    <div class="article-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li>By: <a routerLink="/blog-grid">Chris Orwig</a></li>
+                                <li>Last Updated: August 28, 2020</li>
+                                <li><a routerLink="/blog-grid">4 Comments</a></li>
+                            </ul>
+                        </div>
+                        <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <blockquote class="wp-block-quote">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <cite>Tom Cruise</cite>
+                        </blockquote>
+                        <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="wp-block-gallery columns-3">
+                            <li class="blocks-gallery-item">
+                                <figure>
+                                    <img src="assets/img/blog/blog2.jpg" alt="image">
+                                </figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure>
+                                    <img src="assets/img/blog/blog3.jpg" alt="image">
+                                </figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure>
+                                    <img src="assets/img/blog/blog4.jpg" alt="image">
+                                </figure>
+                            </li>
+                        </ul>
+                        <h3>Four major elements that we offer:</h3>
+                        <ul class="features-list">
+                            <li><i class='bx bx-check'></i> Scientific skills for getting a better result</li>
+                            <li><i class='bx bx-check'></i> Communication skills to getting in touch</li>
+                            <li><i class='bx bx-check'></i> A career overview opportunity available</li>
+                            <li><i class='bx bx-check'></i> A good work environment for work</li>
+                        </ul>
+                        <h3>Setting the mood with incense</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <h3>The rise of marketing and why you need it</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <span><i class='bx bx-purchase-tag'></i></span>
+                            <a routerLink="/blog-grid">City</a>,
+                            <a routerLink="/blog-grid">Games</a>,
+                            <a routerLink="/blog-grid">Travel</a>
+                        </div>
+                        <div class="article-share">
+                            <ul class="social">
+                                <li><span>Share:</span></li>
+                                <li><a href="#" class="facebook" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="#" class="twitter" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="#" class="linkedin" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                <li><a href="#" class="instagram" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="article-author">
+                        <div class="author-profile-header"></div>
+                        <div class="author-profile">
+                            <div class="author-profile-title">
+                                <img src="assets/img/user1.jpg" class="shadow-sm" alt="image">
+                                <h4>Chris Orwig</h4>
+                                <span class="d-block">Photographer, Author, Writer</span>
+                                <p>Chris Orwig is a celebrated photographer, author, and writer who brings passion to everything he does. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fiwan-post-navigation">
+                        <div class="prev-link-wrapper">
+                            <div class="info-prev-link-wrapper">
+                                <a routerLink="/blog-details">
+                                    <span class="image-prev">
+                                        <img src="assets/img/blog/blog2.jpg" alt="image">
+                                        <span class="post-nav-title">Prev</span>
+                                    </span>
+                                    <span class="prev-link-info-wrapper">
+                                        <span class="prev-title">The Best Gaming Laptops You Can Buy Today</span>
+                                        <span class="meta-wrapper">
+                                            <span class="date-post">Aug 20, 2020</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="next-link-wrapper">
+                            <div class="info-next-link-wrapper">
+                                <a routerLink="/blog-details">
+                                    <span class="next-link-info-wrapper">
+                                        <span class="next-title">The Best Sunglasses by Style, Type and Brand</span>
+                                        <span class="meta-wrapper">
+                                            <span class="date-post">Aug 19, 2020</span>
+                                        </span>
+                                    </span>
+                                    <span class="image-next">
+                                        <img src="assets/img/blog/blog3.jpg" alt="image">
+                                        <span class="post-nav-title">Next</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-area">
+                        <h3 class="comments-title">2 Comments:</h3>
+
+                        <ol class="comment-list">
+                            <li class="comment">
+                                <article class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <img src="assets/img/user1.jpg" class="avatar" alt="image">
+                                            <b class="fn">John Jones</b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <span>April 24, 2019 at 10:59 am</span>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                    </div>
+                                    <div class="reply">
+                                        <a routerLink="/blog-details" class="comment-reply-link">Reply</a>
+                                    </div>
+                                </article>
+
+                                <ol class="children">
+                                    <li class="comment">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <img src="assets/img/user2.jpg" class="avatar" alt="image">
+                                                    <b class="fn">Steven Smith</b>
+                                                </div>
+                                                <div class="comment-metadata">
+                                                    <span>April 24, 2020 at 10:59 am</span>
+                                                </div>
+                                            </footer>
+                                            <div class="comment-content">
+                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a routerLink="/blog-details" class="comment-reply-link">Reply</a>
+                                            </div>
+                                        </article>
+
+                                        <ol class="children">
+                                            <li class="comment">
+                                                <article class="comment-body">
+                                                    <footer class="comment-meta">
+                                                        <div class="comment-author vcard">
+                                                            <img src="assets/img/user3.jpg" class="avatar" alt="image">
+                                                            <b class="fn">Sarah Taylor</b>
+                                                        </div>
+                                                        <div class="comment-metadata">
+                                                            <span>April 24, 2020 at 10:59 am</span>
+                                                        </div>
+                                                    </footer>
+                                                    <div class="comment-content">
+                                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                                    </div>
+                                                    <div class="reply">
+                                                        <a routerLink="/blog-details" class="comment-reply-link">Reply</a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+
+                            <li class="comment">
+                                <article class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <img src="assets/img/user4.jpg" class="avatar" alt="image">
+                                            <b class="fn">John Doe</b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <span>April 24, 2020 at 10:59 am</span>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                    </div>
+                                    <div class="reply">
+                                        <a routerLink="/blog-details" class="comment-reply-link">Reply</a>
+                                    </div>
+                                </article>
+
+                                <ol class="children">
+                                    <li class="comment">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <img src="assets/img/user1.jpg" class="avatar" alt="image">
+                                                    <b class="fn">James Anderson</b>
+                                                </div>
+                                                <div class="comment-metadata">
+                                                    <span>April 24, 2020 at 10:59 am</span>
+                                                </div>
+                                            </footer>
+                                            <div class="comment-content">
+                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a routerLink="/blog-details" class="comment-reply-link">Reply</a>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+                        <div class="comment-respond">
+                            <h3 class="comment-reply-title">Leave A Reply</h3>
+
+                            <form class="comment-form">
+                                <p class="comment-notes">
+                                    <span id="email-notes">Your email address will not be published.</span>
+                                    Required fields are marked <span class="required">*</span>
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" id="author" placeholder="Your Name*" name="author" required="required" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" id="email" placeholder="Your Email*" name="email" required="required" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="url" id="url" placeholder="Website" name="url" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="comment" id="comment" cols="45" placeholder="Your Comment..." rows="5" maxlength="65525" required="required" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn"><i class="bx bx-paper-plane"></i> POST A COMMENT</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <aside class="widget-area">
+                    <div class="widget widget_search">
+                        <form class="search-form">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search...">
+                            </label>
+                            <button type="submit"><i class="bx bx-search-alt"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="widget widget_fiwan_posts_thumb">
+                        <h3 class="widget-title">Popular Posts</h3>
+
+                        <article class="item">
+                            <a routerLink="/blog-details" class="thumb"><span class="fullimage cover bg1" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/blog-details">What Is Social Media Marketing for Online Business</a></h4>
+                                <ul class="meta">
+                                    <li><i class='bx bx-calendar'></i> August 25, 2020</li>
+                                    <li><i class='bx bx-time'></i> 2 min</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/blog-details" class="thumb"><span class="fullimage cover bg2" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/blog-details">How Much Does Professional Web Design Cost</a></h4>
+                                <ul class="meta">
+                                    <li><i class='bx bx-calendar'></i> August 24, 2020</li>
+                                    <li><i class='bx bx-time'></i> 3 min</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/blog-details" class="thumb"><span class="fullimage cover bg3" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/blog-details">5 Benefits of SEO Services for Shopify Stores</a></h4>
+                                <ul class="meta">
+                                    <li><i class='bx bx-calendar'></i> August 23, 2020</li>
+                                    <li><i class='bx bx-time'></i> 2 min</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <a routerLink="/blog-details" class="thumb"><span class="fullimage cover bg4" role="img"></span></a>
+                            <div class="info">
+                                <h4 class="title usmall"><a routerLink="/blog-details">The 4 Ingredients to Digital Marketing Success</a></h4>
+                                <ul class="meta">
+                                    <li><i class='bx bx-calendar'></i> August 22, 2020</li>
+                                    <li><i class='bx bx-time'></i> 5 min</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Categories</h3>
+
+                        <ul>
+                            <li><a routerLink="/blog-right-sidebar">Accessories</a><span class="post_count">(5)</span></li>
+                            <li><a routerLink="/blog-right-sidebar">Men</a><span class="post_count">(7)</span></li>
+                            <li><a routerLink="/blog-right-sidebar">Women</a><span class="post_count">(3)</span></li>
+                            <li><a routerLink="/blog-right-sidebar">Sofa</a><span class="post_count">(2)</span></li>
+                            <li><a routerLink="/blog-right-sidebar">Uncategorized</a><span class="post_count">(8)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_socials_link">
+                        <h3 class="widget-title">Stay Connected</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_buy_now">
+                        <img src="assets/img/custom-ads.jpg" alt="image">
+                        <div class="content">
+                            <img src="assets/img/logo.png" alt="image">
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod.</p>
+                            <a href="#" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="widget widget_tag_cloud">
+                        <h3 class="widget-title">Tags</h3>
+
+                        <div class="tagcloud">
+                            <a routerLink="/blog-right-sidebar">Business <span class="tag-link-count"> (3)</span></a>
+                            <a routerLink="/blog-right-sidebar">Design <span class="tag-link-count"> (3)</span></a>
+                            <a routerLink="/blog-right-sidebar">Fiwan <span class="tag-link-count"> (2)</span></a>
+                            <a routerLink="/blog-right-sidebar">Fashion <span class="tag-link-count"> (2)</span></a>
+                            <a routerLink="/blog-right-sidebar">Travel <span class="tag-link-count"> (1)</span></a>
+                            <a routerLink="/blog-right-sidebar">Smart <span class="tag-link-count"> (1)</span></a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Details Area -->

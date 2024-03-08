@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="section-title" *ngFor="let Content of sectionTitle;">
+        <h2>{{Content.title}}</h2>
+        <p>{{Content.paragraph}}</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let product of products; index as i ">
+            <!-- <div class="single-products-item">
+                <div class="products-image">
+                    <a routerLink="/simple-product" class="d-block">
+                        <img [src]="Content.PictureURL" alt="image">
+                    </a>
+                    <ul class="products-button">
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView"><i class='bx bx-show-alt'></i></a></li>
+                        <li><a href="{{Content.PictureURL}}" class="popup-btn"><i class='bx bx-scan'></i></a></li>
+                        <li><a routerLink="/simple-product"><i class='bx bx-link'></i></a></li>
+                    </ul>
+                    <a routerLink="/cart" class="add-to-cart-btn"><i class="bx bx-cart"></i> Add To Cart</a>
+                </div>
+                <div class="products-content">
+                    <h3><a routerLink="/simple-product">{{Content.name}}</a></h3>
+                    <div class="price">
+                        <span class="new-price">{{Content.sPrice}}</span>
+                        <span class="old-price" *ngIf="Content.sPrice">{{Content.sPrice}}</span>
+                    </div>
+                    <a routerLink="/wishlist" class="add-to-wishlist-btn"><i class="bx bx-heart"></i></a>
+                </div>
+                <span class="on-sale" *ngIf="Content.discount">{{Content.discount}}</span>
+                <div class="out-of-stock" *ngIf="Content.stock">{{Content.stock}}</div>
+            </div> -->
+            <app-product-item *ngIf="i < 8"  [product] = "product"> </app-product-item>
+        </div>
+    </div>
+</div>

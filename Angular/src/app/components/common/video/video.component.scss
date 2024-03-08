@@ -1,0 +1,144 @@
+.video-area {
+    z-index: 1;
+    position: relative;
+    background: {
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+    };
+    padding: {
+        top: 200px;
+        bottom: 200px;
+    };
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--blackColor);
+        opacity: .45;
+        z-index: -1;
+    }
+}
+.video-content {
+    text-align: center;
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+        color: var(--whiteColor);
+    }
+    p {
+        color: var(--whiteColor);
+        max-width: 610px;
+        opacity: 0.9;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .video-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        transition: var(--transition);
+        background-color: rgba(255, 255, 255, .65);
+        font-size: 60px;
+        display: inline-block;
+        margin-top: 10px;
+
+        i {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .video-area {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+    }
+    .video-content {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .video-btn {
+            width: 60px;
+            height: 60px;
+            font-size: 50px;
+
+            i {
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .video-area {
+        padding: {
+            top: 120px;
+            bottom: 120px;
+        };
+    }
+    .video-content {
+        h2 {
+            font-size: 30px;
+        }
+        .video-btn {
+            width: 70px;
+            height: 70px;
+            font-size: 55px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

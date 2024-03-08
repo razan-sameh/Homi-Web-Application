@@ -1,0 +1,131 @@
+.subscribe-area {
+    text-align: center;
+    background: {
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+    };
+    .section-title {
+        margin-bottom: 0;
+
+        .sub-title {
+            color: var(--mainColor);
+        }
+    }
+    form {
+        max-width: 700px;
+        position: relative;
+        padding-right: 205px;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 30px;
+        };
+        label {
+            left: 15px;
+            top: 8px;
+            position: absolute;
+            margin-bottom: 0;
+            color: var(--blackColor);
+            font-size: 25px;
+        }
+        .input-newsletter {
+            height: 50px;
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: var(--whiteColor);
+            color: var(--blackColor);
+            border-radius: 5px;
+            font-weight: 500;
+            padding-left: 55px;
+
+            &::placeholder {
+                color: #999999;
+                transition: var(--transition);
+            }
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+        .default-btn {
+            top: 0;
+            right: 0;
+            height: 50px;
+            position: absolute;
+            border-radius: 5px;
+            padding: {
+                top: 9px;
+                bottom: 10px;
+            };
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .subscribe-area {
+        form {
+            max-width: 100%;
+            padding-right: 0;
+            margin: {
+                left: 0;
+                right: 0;
+                top: 30px;
+            };
+            .default-btn {
+                height: auto;
+                position: relative;
+                margin-top: 15px;
+                padding: {
+                    top: 11px;
+                    bottom: 10px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .subscribe-area {
+        form {
+            max-width: 600px;
+            padding-right: 185px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

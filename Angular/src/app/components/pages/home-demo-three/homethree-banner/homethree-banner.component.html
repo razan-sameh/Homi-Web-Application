@@ -1,0 +1,34 @@
+<!-- Start Main Banner Area -->
+<div class="home-banner-area home-banner-area-two">
+    <div class="container-fluid">
+        <div class="home-slides">
+            <owl-carousel-o [options]="homeSlidesOptions">
+                <ng-template carouselSlide *ngFor="let Content of mainBannerItem;">
+                    <div class="main-banner-area">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12">
+                                <div class="main-banner-content">
+                                    <span class="sub-title">{{Content.subTitle}}</span>
+                                    <h1>{{Content.title}}</h1>
+                                    <p>{{Content.paragraph}}</p>
+                                    <a routerLink="/{{Content.buttonLink}}" class="default-btn"><i class="{{Content.buttonIcon}}"></i> {{Content.buttonText}}</a>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-7 col-md-12">
+                                <div class="main-banner-image text-center" style="background-image: url({{Content.image}});">
+                                    <img [src]="Content.image" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+
+    <ul class="banner-social-links">
+        <li *ngFor="let Links of bannerSocialLinks;"><a href="{{Links.link}}" target="_blank"><i class="{{Links.icon}}"></i></a></li>
+    </ul>
+</div>
+<!-- End Main Banner Area -->

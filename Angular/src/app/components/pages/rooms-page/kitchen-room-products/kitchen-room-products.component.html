@@ -1,0 +1,48 @@
+<!-- Start Kitchen Area -->
+<section class="rooms-area pt-100 jarallax" data-jarallax='{"speed": 0.3}' *ngFor="let Content of roomsContent;" style="background-image: url({{Content.bgImage}});">
+    <div class="container">
+        <div class="rooms-content">
+            <h2>{{Content.title}}</h2>
+            <p>{{Content.paragraph}}</p>
+            <ul>
+                <li *ngFor="let List of Content.list">{{List.title}}</li>
+            </ul>
+            <a routerLink="/{{Content.buttonLink}}" class="default-btn"><i class='{{Content.buttonIcon}}'></i> {{Content.buttonText}}</a>
+        </div>
+    </div>
+</section>
+
+<section class="products-area ptb-100">
+    <div class="container">
+        <div class="products-slides">
+            <owl-carousel-o [options]="productsSlidesOptions">
+                <ng-template carouselSlide *ngFor="let Content of singleProductsBox;">
+                    <div class="single-products-box">
+                        <div class="products-image">
+                            <a routerLink="/{{Content.detailsLink}}" class="d-block">
+                                <img [src]="Content.mainImg" alt="image">
+                            </a>
+                            <ul class="products-button">
+                                <li><a routerLink="/wishlist"><i class='bx bx-heart'></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView"><i class='bx bx-show-alt'></i></a></li>
+                                <li><a href="{{Content.mainImg}}" class="popup-btn"><i class='bx bx-scan'></i></a></li>
+                                <li><a routerLink="/{{Content.detailsLink}}"><i class='bx bx-link'></i></a></li>
+                            </ul>
+                            <a routerLink="/cart" class="add-to-cart-btn"><i class="bx bx-cart"></i> Add To Cart</a>
+                        </div>
+                        <div class="products-content">
+                            <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
+                            <div class="price">
+                                <span class="new-price">{{Content.newPrice}}</span>
+                                <span class="old-price" *ngIf="Content.oldPrice">{{Content.oldPrice}}</span>
+                            </div>
+                            <span class="on-sale" *ngIf="Content.sale">{{Content.sale}}</span>
+                            <div class="out-of-stock" *ngIf="Content.outOfStock">{{Content.outOfStock}}</div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<!-- End Kitchen Area -->

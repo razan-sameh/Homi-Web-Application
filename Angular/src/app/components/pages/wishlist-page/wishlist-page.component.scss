@@ -1,0 +1,169 @@
+.wishlist-table {
+    table {
+        margin-bottom: 0;
+
+        thead {
+            tr {
+                border: none;
+                
+                th {
+                    border: none;
+                    padding: 0 0 15px;
+                    border-bottom-width: 0px;
+                    vertical-align: middle;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    };
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+                    color: #585d81;
+                    white-space: nowrap;
+                    font: {
+                        weight: 600;
+                        size: var(--fontSize);
+                    };
+                    padding: {
+                        left: 0;
+                        right: 0;
+                    };
+                    border: {
+                        color: #eaedff;
+                        left: none;
+                        right: none;
+                    };
+                    &.product-thumbnail {
+                        a {
+                            display: block;
+
+                            img {
+                                width: 80px;
+                                border: 1px solid #eeeeee;
+                            }
+                        }
+                    }
+                    &.product-name {
+                        a {
+                            display: inline-block;
+                        }
+                    }
+                    &.product-subtotal {
+                        .remove {
+                            color: red;
+                            font-size: 18px;
+                            margin-left: 30px;
+                        }
+                    }
+                    &.product-stock-status {
+                        span {
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 21px;
+
+                            i {
+                                position: absolute;
+                                left: 0;
+                                top: 4px;
+                            }
+                            &.in-stock {
+                                color: #297e29;
+                            }
+                            &.out-stock {
+                                color: #ffb453;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .wishlist-table {
+        table {
+            thead {
+                tr {
+                    th {
+                        font-size: 14px;
+                        padding: {
+                            left: 15px;
+                            right: 15px;
+                        };
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                        &:last-child {
+                            padding-right: 60px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 14px;
+                        padding: {
+                            left: 15px;
+                            right: 15px;
+                        };
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1355px */
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+
+
+}

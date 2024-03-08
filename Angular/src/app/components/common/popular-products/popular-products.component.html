@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="section-title" *ngFor="let Content of sectionTitle;">
+        <h2>{{Content.title}}</h2>
+        <p>{{Content.paragraph}}</p>
+    </div>
+
+    <div class="products-slides">
+        <owl-carousel-o [options]="productsSlidesOptions">
+            <ng-template carouselSlide *ngFor="let Content of singleProductsBox">
+                <div class="single-products-box">
+                    <div class="products-image">
+                        <a routerLink="/shop-left-sidebar-2/{{Content.product_ID}}" class="d-block">
+                            <img [src]="Content.pictureURL" alt="image">
+                        </a>
+                        <ul class="products-button">
+                            <li><a routerLink="/wishlist"><i class='bx bx-heart'></i></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView"><i class='bx bx-show-alt'></i></a></li>
+                            <li><a href="{{Content.pictureURL}}" class="popup-btn"><i class='bx bx-scan'></i></a></li>
+                            <li><a routerLink="/shop-left-sidebar-2/{{Content.product_ID}}"><i class='bx bx-link'></i></a></li>
+                        </ul>
+                        <a (click)="cart.addItemToCart(Content)" class="add-to-cart-btn" style="cursor: pointer;"><i class="bx bx-cart"></i> Add To Cart</a>
+                    </div>
+                    <div class="products-content">
+                        <h3><a routerLink="/shop-left-sidebar-2/{{Content.product_ID}}">{{Content.name}}</a></h3>
+                        <div class="price">
+                            <span class="new-price">{{Content.sPrice | currency}}</span>
+                            <span class="old-price"  *ngIf="Content.discount > 0">{{Content.sPrice | currency}}</span>
+                        </div>
+                    </div>
+                    <span class="on-sale" *ngIf="Content.discount > 0">Sale!</span>
+                    <div class="out-of-stock" *ngIf="Content.stock == 0">Out of Stock</div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

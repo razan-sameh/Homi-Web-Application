@@ -1,0 +1,40 @@
+<app-sidebar></app-sidebar>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});margin-top: 0px;">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/Products">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Profile Authentication Area -->
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row" style="justify-content: center;">
+            <div class="col">
+                <div class="login-form">
+                    <h2>Update Style</h2>
+
+                    <form [formGroup]="addForm" (ngSubmit)="onSubmit()"  *ngIf="style">
+
+                        <div class="">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input
+                                [class.is-invalid]="addForm.get('name')?.invalid&&addForm.get('name')?.touched" formControlName="name"
+                                type="text" class="form-control" placeholder="Name"
+                                >
+                                <div *ngIf="addForm.get('name')?.errors?.['required']" class="invalid-feedback">Name is required</div>
+                            </div>
+                        </div>
+                        <button [disabled]="addForm.invalid" type="submit">UPDATE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Profile Authentication Area -->

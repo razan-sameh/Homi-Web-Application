@@ -1,0 +1,29 @@
+<!-- Start Categories Area -->
+<section class="categories-area pt-100 pb-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12">
+                <div class="single-categories-box" *ngFor="let Content of singleCategoriesBigBox;">
+                    <img [src]="Content.img" alt="image">
+                    <div class="content">
+                        <h3>{{Content.title}}</h3>
+                        <a routerLink="/{{Content.link}}" class="shop-now-btn">{{Content.buttonText}}</a>
+                    </div>
+                    <a routerLink="/{{Content.link}}" class="link-btn"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="single-categories-box" *ngFor="let Content of singleCategoriesBox;">
+                    <img [src]="Content.img" alt="image">
+                    <div class="content">
+                        <h3>{{Content.title}}</h3>
+                        <a routerLink="/{{Content.link}}" class="shop-now-btn">{{Content.buttonText}}</a>
+                    </div>
+                    <a routerLink="/{{Content.link}}" class="link-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Categories Area -->

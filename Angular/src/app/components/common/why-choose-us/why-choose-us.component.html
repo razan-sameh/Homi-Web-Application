@@ -1,0 +1,26 @@
+<!-- Start Why Choose Us Area -->
+<section class="why-choose-area ptb-100 bg-f5f5f5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-content" *ngFor="let Content of whyChooseContent;">
+                    <span class="sub-title">{{Content.subTitle}}</span>
+                    <h2>{{Content.title}}</h2>
+                    <p>{{Content.paragraph}}</p>
+
+                    <div class="content" *ngFor="let Text of Content.content">
+                        <h3>{{Text.title}}</h3>
+                        <p>{{Text.paragraph}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-image" *ngFor="let Image of whyChooseImage;">
+                    <img [src]="Image.img" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Why Choose Us Area -->

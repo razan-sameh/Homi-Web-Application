@@ -1,0 +1,11 @@
+<!-- Start Video Area -->
+<section class="video-area jarallax" data-jarallax='{"speed": 0.3}' *ngFor="let Content of videoContent;" style="background-image: url({{Content.bgImage}});">
+    <div class="container">
+        <div class="video-content">
+            <h2>{{Content.title}}</h2>
+            <p>{{Content.paragraph}}</p>
+            <a href="{{Content.videoLink}}" class="video-btn popup-youtube"><i class='bx bx-play'></i></a>
+        </div>
+    </div>
+</section>
+<!-- End Video Area -->

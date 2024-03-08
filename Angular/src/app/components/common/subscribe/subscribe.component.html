@@ -1,0 +1,16 @@
+<!-- Start Subscribe Area -->
+<section class="subscribe-area ptb-100 jarallax" data-jarallax='{"speed": 0.3}' *ngFor="let SubscribeContent of subscribeArea;" style="background-image: url({{SubscribeContent.bgImage}});">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">{{SubscribeContent.subTitle}}</span>
+            <h2>{{SubscribeContent.title}}</h2>
+        </div>
+
+        <form class="newsletter-form">
+            <label><i class='bx bx-envelope-open'></i></label>
+            <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off">
+            <button type="submit" class="default-btn"><i class='bx bx-paper-plane'></i> SUBSCRIBE NOW</button>
+        </form>
+    </div>
+</section>
+<!-- End Subscribe Area -->

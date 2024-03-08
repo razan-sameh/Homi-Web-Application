@@ -1,0 +1,49 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Wishlist Area -->
+<section class="wishlist-area ptb-100">
+    <div class="container">
+        <form>
+            <div class="wishlist-table table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Order</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let order of orders" routerLink="/orders/{{order.id}}">
+                            <td class="product-name">
+                                <span># {{order.id}}</span>
+                            </td>
+                            <td class="product-name">
+                                <span>{{order.orderDate | date:'medium'}}</span>
+                            </td>
+                            <td class="product-price">
+                                <span class="unit-amount">{{order.total | currency}}</span>
+                            </td>
+                            <td class="product-stock-status">
+                                <span class="in-stock"><i class='bx bx-check-circle'></i> {{order.status}}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End Wishlist Area -->

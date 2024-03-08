@@ -1,0 +1,43 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start About Area -->
+<section class="about-area pt-100 pb-70">
+    <div class="container">
+        <div class="about-content" *ngFor="let Content of aboutContent;">
+            <span class="sub-title">{{Content.subTitle}}</span>
+            <h2>{{Content.title}}</h2>
+            <p>{{Content.paragraph}}</p>
+
+            <div class="content" *ngFor="let Text of Content.content">
+                <h3>{{Text.title}}</h3>
+                <p>{{Text.paragraph}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6" *ngFor="let Image of aboutImage;">
+                <div class="about-image text-center">
+                    <img [src]="Image.img" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Area -->
+
+<app-why-choose-us></app-why-choose-us>
+
+
+<app-testimonials></app-testimonials>
+
+<app-facility-style-one></app-facility-style-one>

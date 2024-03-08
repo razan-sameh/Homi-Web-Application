@@ -1,0 +1,16 @@
+<!-- Start Deal Of The Week Area -->
+<section class="deal-of-the-week-area pt-100 bg-e8fdff">
+    <div class="container">
+        <div class="deal-of-the-week-content" *ngFor="let Content of dealOfTheWeekContent;">
+            <h2>{{Content.title}}</h2>
+            <p>{{Content.paragraph}}</p>
+            <span class="discount"><strong>{{Content.discountPercent}}</strong></span>
+            <a routerLink="/{{Content.buttonLink}}" class="default-btn"><i class='{{Content.buttonIcon}}'></i> {{Content.buttonText}}</a>
+        </div>
+
+        <div class="deal-of-the-week-image text-center" *ngFor="let Image of dealOfTheWeekImage;">
+            <img [src]="Image.img" alt="image">
+        </div>
+    </div>
+</section>
+<!-- End Deal Of The Week Area -->

@@ -1,0 +1,58 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}}); margin-top: 0px;">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Profile Authentication Area -->
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row"  style="justify-content: center;">
+            <div class="col-lg-6 col-md-12">
+                <div class="register-form">
+                    <h2>Register</h2>
+
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="name">Username</label>
+                            <input  [class.is-invalid]="registerForm.get('displayName')?.invalid&&registerForm.get('displayName')?.touched"
+                            formControlName="displayName" type="text" class="form-control" placeholder="Username or email"
+                            type="text" id="name" class="form-control" placeholder="Username">
+                            <div *ngIf="registerForm.get('displayName')?.errors?.['required']" class="invalid-feedback">Username is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail">Email</label>
+                            <input  [class.is-invalid]="registerForm.get('email')?.invalid&&registerForm.get('email')?.touched"
+                            formControlName="email" type="text" class="form-control" placeholder="Username or email"
+                            type="email" id="mail" class="form-control" placeholder="Email">
+                            <div *ngIf="registerForm.get('email')?.errors?.['required']" class="invalid-feedback">Email is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <input  [class.is-invalid]="registerForm.get('password')?.invalid&&registerForm.get('password')?.touched"
+                            formControlName="password" type="text" class="form-control" placeholder="Username or email"
+                            type="password" id="pass" class="form-control" placeholder="Password">
+                            <div *ngIf="registerForm.get('password')?.errors?.['required']" class="invalid-feedback">Password is required
+                                <br>The password should be at least 6 characters long. Include upper and lower case letters, numbers, and symbols like @ # * ! " ? $ % ^ & </div>
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label>Confirm Password</label>
+                            type="password" class="form-control" placeholder="Password">
+                        </div> -->
+                        <button [disabled]="registerForm.invalid"  type="submit">REGISTER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Profile Authentication Area -->

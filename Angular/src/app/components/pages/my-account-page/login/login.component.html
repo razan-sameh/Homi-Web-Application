@@ -1,0 +1,69 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});margin-top: 0px;">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Profile Authentication Area -->
+<section class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row" style="justify-content: center;">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Login</h2>
+
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label>Username or email</label>
+                            <input [class.is-invalid]="loginForm.get('email')?.invalid&&loginForm.get('email')?.touched"
+                            formControlName="email" type="text" class="form-control" placeholder="Username or email">
+                            <div *ngIf="loginForm.get('email')?.errors?.['required']" class="invalid-feedback">Email is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input [class.is-invalid]="loginForm.get('password')?.invalid&&loginForm.get('password')?.touched"
+                            formControlName="password" type="password" class="form-control" placeholder="Password">
+                            <div *ngIf="loginForm.get('password')?.errors?.['required']" class="invalid-feedback">Password is required</div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-6 remember-me-wrap">
+                                <!-- <p>
+                                    <input type="checkbox" id="test2">
+                                    <label for="test2">Remember me</label>
+                                </p> -->
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 lost-your-password-wrap">
+                                <a routerLink="/forgot-password" class="lost-your-password">Forgot your password?</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-6 remember-me-wrap">
+                                <p>
+                                    <input type="checkbox" id="test2">
+                                    <label for="test2">Remember me</label>
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 lost-your-password-wrap">
+                                <a routerLink="/" class="lost-your-password">Lost your password?</a>
+                            </div>
+                        </div> -->
+
+                        <button [disabled]="loginForm.invalid" type="submit">LOG IN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Profile Authentication Area -->

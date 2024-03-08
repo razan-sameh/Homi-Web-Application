@@ -1,0 +1,73 @@
+{
+    "pageIndex": [
+        1
+    ],
+    "pageSize": [
+        6
+    ],
+    "count": [
+        4
+    ],
+    "Products": [
+        {
+            "id": 7,
+            "name": "bed",
+            "color": "Core.Models.Color",
+            "stock": 50,
+            "dimensions": null,
+            "style": "Core.Models.Style",
+            "specialFeature": null,
+            "pictureURL": "assets/img/products/Pro (1).jpg",
+            "describtion": null,
+            "sPrice": 300.00,
+            "discount": 0,
+            "productType": "Bed\r\n",
+            "productBrand": "ox"
+        },
+        {
+            "id": 8,
+            "name": "bed2",
+            "color": "Core.Models.Color",
+            "stock": 50,
+            "dimensions": null,
+            "style": "Core.Models.Style",
+            "specialFeature": null,
+            "pictureURL": "assets/img/products/Pro (4).jpg",
+            "describtion": null,
+            "sPrice": 300.00,
+            "discount": 0,
+            "productType": "Bed\r\n",
+            "productBrand": "Floyed"
+        },
+        {
+            "id": 5,
+            "name": "table",
+            "color": "Core.Models.Color",
+            "stock": 50,
+            "dimensions": "15 x 20",
+            "style": "Core.Models.Style",
+            "specialFeature": "test",
+            "pictureURL": "assets/img/products/Pro (2).jpg",
+            "describtion": "test",
+            "sPrice": 400.00,
+            "discount": 0,
+            "productType": "tables",
+            "productBrand": "ox"
+        },
+        {
+            "id": 9,
+            "name": "table2",
+            "color": "Core.Models.Color",
+            "stock": 50,
+            "dimensions": "15 x 20",
+            "style": "Core.Models.Style",
+            "specialFeature": "test",
+            "pictureURL": "assets/img/products/Pro (3).jpg",
+            "describtion": "test",
+            "sPrice": 400.00,
+            "discount": 0,
+            "productType": "tables",
+            "productBrand": "Floyed"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Cart Area -->
+
+<section class="cart-area ptb-100">
+    <div class="container" *ngIf="!order">
+        <div>
+            <p>There are no items in your cart</p>
+        </div>
+    </div>
+    <div class="container" *ngIf="order">
+        <form>
+            <div class="cart-table table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Unit Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let item of order.orderItem">
+                            <td class="product-thumbnail">
+                                <a routerLink="/shop-left-sidebar-2/{{item.id}}"><img src="{{item.pictureUrl}}" alt="item"></a>
+                            </td>
+
+                            <td class="product-name">
+                                <a routerLink="/shop-left-sidebar-2/{{item.id}}">{{item.productName}}</a>
+                            </td>
+
+                            <td class="product-price">
+                                <span class="unit-amount">{{item.price}}</span>
+                            </td>
+
+                            <td class="product-quantity">
+                                <span class="unit-amount">{{item.quantity}}</span>
+                            </td>
+
+                            <td class="product-subtotal">
+                                <span class="subtotal-amount">{{item.price * item.quantity | currency}}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-totals" *ngIf="order">
+                <ul>
+                    <li>Subtotal <span>{{total.subTotal | currency}}</span></li>
+                    <li>Shipping <span>{{total.shipping | currency}}</span></li>
+                    <li>Total <span>{{total.Total | currency}}</span></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- End Cart Area -->

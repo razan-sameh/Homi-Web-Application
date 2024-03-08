@@ -1,0 +1,27 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<!-- Start Page Title Area -->
+<div class="page-title-area mt-0" *ngFor="let Content of pageTitle;" style="background-image: url({{Content.bgImage}});">
+    <h1>{{Content.title}}</h1>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li>{{Content.title}}</li>
+    </ul>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Gallery Area -->
+<section class="gallery-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let Image of singleGalleryItem;">
+                <div class="single-gallery-item">
+                    <a class="popup-btn" href="{{Image.img}}">
+                        <img [src]="Image.img" alt="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Gallery Area -->

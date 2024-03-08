@@ -1,0 +1,19 @@
+<!-- Start Categories Area -->
+<section class="categories-area pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6" *ngFor="let Content of singleCategoriesItem;">
+                <div class="categories-box">
+                    <img [src]="Content.img" alt="image">
+                    <div class="content">
+                        <h3>{{Content.title}}</h3>
+                        <span>{{Content.items}}</span>
+                        <a routerLink="/{{Content.link}}" class="shop-now-btn">{{Content.buttonText}}</a>
+                    </div>
+                    <a routerLink="/{{Content.link}}" class="link-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Categories Area -->
